@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 
 class ListContacts extends React.Component {
@@ -36,6 +37,11 @@ class ListContacts extends React.Component {
                         value={query}
                         onChange={e => this.updateQuery(e.target.value)}
                     />
+
+						  <Link 
+						  		className="add-contact"
+								to="/create"
+						  >Add Contacts</Link>
                 </div>
 
                 {
